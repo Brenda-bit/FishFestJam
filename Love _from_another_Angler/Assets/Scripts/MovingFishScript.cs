@@ -27,7 +27,9 @@ public class MovingFishScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-      
-       Debug.Log("Player collided with the trigger object!");
+        if (other.CompareTag("Mate"))
+        {
+            Debug.Log("Mated");
+        }
     }
 }
