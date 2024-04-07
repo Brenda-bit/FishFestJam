@@ -161,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e142a28a478a90446956dd4a74ea29cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2980893671159564560, guid: 18f4fb20a4fb83742a06eec4ec0c075b, type: 3}
   open: {fileID: 0}
   point1: {fileID: 0}
   point2: {fileID: 0}
