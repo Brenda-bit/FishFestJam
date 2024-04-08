@@ -269,8 +269,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d666d26d4876948bafefb463a2e810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToLevel: 01_Level
+  nextLevel: 01_Level
   infoPanel: {fileID: 0}
+  objectsToDisable:
+  - {fileID: 41268365}
+  - {fileID: 1015022865}
+  imageToShrink: {fileID: 1288007703}
+  shrinkSpeed: 1000
 --- !u!1 &46636488
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,8 +1098,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d666d26d4876948bafefb463a2e810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToLevel: 01_Level
+  nextLevel: 
   infoPanel: {fileID: 693700206}
+  objectsToDisable: []
+  imageToShrink: {fileID: 0}
+  shrinkSpeed: 1
 --- !u!114 &1015022868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1383,8 +1391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0d666d26d4876948bafefb463a2e810, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goToLevel: 
+  nextLevel: 
   infoPanel: {fileID: 693700206}
+  objectsToDisable: []
+  imageToShrink: {fileID: 0}
+  shrinkSpeed: 1
 --- !u!114 &1381300933
 MonoBehaviour:
   m_ObjectHideFlags: 0
