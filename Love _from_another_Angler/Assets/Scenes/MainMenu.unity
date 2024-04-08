@@ -1830,6 +1830,86 @@ Transform:
   - {fileID: 707838088}
   m_Father: {fileID: 786086338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2025084854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2025084856}
+  - component: {fileID: 2025084855}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2025084855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025084854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f58aea2fbbd08f45a8eb0fc7a87a654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: AmbientMusic
+    clip: {fileID: 8300000, guid: 4ef56ee5b18f3ab4cab63b0c43f74a42, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    isMusic: 0
+    source: {fileID: 0}
+  - name: ConfirmButton
+    clip: {fileID: 8300000, guid: 2949d2b8b08de154f9ca7193c7c1c4ec, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: HoverButton
+    clip: {fileID: 8300000, guid: 5dd4aefe2de75c5428656565d2847023, type: 3}
+    volume: 1
+    pitch: 0.4
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: LevelCompleted
+    clip: {fileID: 8300000, guid: 3723f1b79f2f8984cbdbdf6b7251f94d, type: 3}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: 7ad84b310bad3b141b5198c3592b14a0, type: 3}
+    volume: 0.8
+    pitch: 1
+    loop: 0
+    isMusic: 0
+    source: {fileID: 0}
+--- !u!4 &2025084856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025084854}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -132.57196, y: 34.978184, z: -8.062172}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1837,3 +1917,4 @@ SceneRoots:
   - {fileID: 786086338}
   - {fileID: 891356289}
   - {fileID: 1243809288}
+  - {fileID: 2025084856}

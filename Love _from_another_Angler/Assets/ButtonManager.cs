@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -14,8 +15,31 @@ public class ButtonManager : MonoBehaviour
 
     private Coroutine shrinkCoroutine; // Referência para a coroutine de redução da imagem
 
+    void Start()
+    {
+        // Obtém ou adiciona o componente EventTrigger ao botão
+        EventTrigger trigger = gameObject.GetComponent<EventTrigger>();
+        if (trigger == null)
+        {
+            trigger = gameObject.AddComponent<EventTrigger>();
+        }
+
+        // Adiciona um ouvinte para o evento PointerEnter
+        EventTrigger.Entry entryEnter = new EventTrigger.Entry();
+        entryEnter.eventID = EventTriggerType.PointerEnter;
+        entryEnter.callback.AddListener((data) => { OnPointerEnter(); });
+        trigger.triggers.Add(entryEnter);
+    }
+
+    void OnPointerEnter()
+    {
+        FindObjectOfType<AudioManager>().Play("HoverButton");
+    }
+
     public void PressedButton()
     {
+        FindObjectOfType<AudioManager>().Play("ConfirmButton");
+
         // Verifica se a lista de objetos não está vazia
         if (objectsToDisable != null)
         {
@@ -54,6 +78,7 @@ public class ButtonManager : MonoBehaviour
 
     public void OpenInfoButton()
     {
+        FindObjectOfType<AudioManager>().Play("ConfirmButton");
         if (infoPanel != null)
         {
             infoPanel.SetActive(true); // Ativa o painel de informações

@@ -26,6 +26,8 @@ public class NextLevelManager : MonoBehaviour
         // Verifica se o objeto que entrou na trigger é o jogador (ou outro objeto específico)
         if (other.CompareTag("Player"))
         {
+            FindObjectOfType<AudioManager>().Play("LevelCompleted");
+
             // Ativa o sistema de partículas se houver um atribuído
             if (particleSystem != null)
             {
