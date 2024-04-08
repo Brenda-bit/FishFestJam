@@ -76,6 +76,9 @@ public class EnemyFollow : MonoBehaviour
                 // Move this object towards the player with reduced velocity
                transform.position += direction * movement;
             }
+
+            Debug.Log(transform.position  + "eu");
+            Debug.Log(player.transform.position + "PLAYER");
         }
     }
 }
