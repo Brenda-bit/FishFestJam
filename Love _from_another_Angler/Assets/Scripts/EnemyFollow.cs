@@ -39,46 +39,26 @@ public class EnemyFollow : MonoBehaviour
         if(startFollow == false)
         {
             Vector3 direction = spawn.transform.position - transform.position;
-
-            // Calculate the distance between this object and the player
             float distance = direction.magnitude;
-
-            // Check if the distance is greater than a small value to avoid jittering
             if (distance > 0.1f)
             {
-                // Normalize the direction to get a unit vector
                 direction /= distance;
 
-                // Calculate the movement amount based on the follow speed and deltaTime
                 float movement = followSpeed * Time.deltaTime;
-
-                // Move this object towards the player with reduced velocity
                 transform.position += direction * movement;
             }
         }
         if (player != null && startFollow)
         {
-            // Calculate the direction from this object to the player
             Vector3 direction = player.transform.position - transform.position;
-
-            // Calculate the distance between this object and the player
             float distance = direction.magnitude;
-
-            // Check if the distance is greater than a small value to avoid jittering
             if (distance > 0.1f)
             {
-                // Normalize the direction to get a unit vector
                 direction /= distance;
-
-                // Calculate the movement amount based on the follow speed and deltaTime
                 float movement = followSpeed * Time.deltaTime;
 
-                // Move this object towards the player with reduced velocity
                transform.position += direction * movement;
             }
-
-            Debug.Log(transform.position  + "eu");
-            Debug.Log(player.transform.position + "PLAYER");
         }
     }
 }

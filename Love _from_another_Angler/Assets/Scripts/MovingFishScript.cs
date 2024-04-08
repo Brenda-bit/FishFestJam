@@ -6,7 +6,13 @@ public class MovingFishScript : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public GameObject lightOff;
-    // Update is called once per frame
+    private SpriteRenderer spriteRenderer;
+    
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
@@ -23,6 +29,14 @@ public class MovingFishScript : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Space) && lightOff.activeSelf == true) 
         {
             lightOff.SetActive(false);
+        }
+        if (horizontalInput > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (horizontalInput < 0)
+        {
+            spriteRenderer.flipX = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
