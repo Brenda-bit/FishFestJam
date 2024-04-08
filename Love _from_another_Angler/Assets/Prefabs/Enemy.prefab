@@ -270,4 +270,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyFollow: {fileID: 3355254460997282553}
   player: {fileID: 3635880206367808839, guid: ae1c61aa6733df34f901d4da58c019c5, type: 3}
-  followSpeed: 10
+  spawn: {fileID: 0}
+  followSpeed: 15

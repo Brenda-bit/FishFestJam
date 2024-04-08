@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathZone : MonoBehaviour
 {
@@ -9,13 +10,7 @@ public class DeathZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Dead haha");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

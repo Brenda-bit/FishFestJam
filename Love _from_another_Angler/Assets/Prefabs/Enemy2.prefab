@@ -102,7 +102,7 @@ MonoBehaviour:
   closed: {fileID: 0}
   open: {fileID: 0}
   spawn: {fileID: 0}
-  followSpeed: 0.57
+  followSpeed: 0.6
 --- !u!58 &306677087988290534
 CircleCollider2D:
   m_ObjectHideFlags: 0
