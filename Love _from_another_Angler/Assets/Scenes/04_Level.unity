@@ -2203,7 +2203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1617288822432812558, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
       propertyPath: m_Radius
-      value: 3.6776788
+      value: 6.34
       objectReference: {fileID: 0}
     - target: {fileID: 1617288822432812558, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
       propertyPath: m_Offset.x
@@ -2217,6 +2217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mate
       objectReference: {fileID: 0}
+    - target: {fileID: 6950046884664181985, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1514384461}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3789,6 +3793,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6047284813900759396, guid: 618a3bc93bb763e4abc283e08ea3d8ec, type: 3}
   m_PrefabInstance: {fileID: 1002614214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1013307793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4709843580669830791, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
+  m_PrefabInstance: {fileID: 503985929}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1016845430
 PrefabInstance:
@@ -6100,6 +6109,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 928369070}
+    - target: {fileID: 6183413148590321063, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
+      propertyPath: mate
+      value: 
+      objectReference: {fileID: 1013307793}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

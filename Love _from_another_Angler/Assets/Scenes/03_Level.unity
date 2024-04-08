@@ -740,6 +740,11 @@ Transform:
   - {fileID: 288323245}
   m_Father: {fileID: 761056490}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &70758061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4709843580669830791, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
+  m_PrefabInstance: {fileID: 503985929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &78292129
 GameObject:
   m_ObjectHideFlags: 0
@@ -1901,19 +1906,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1159519599715715394, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.4
+      value: -18.1
       objectReference: {fileID: 0}
     - target: {fileID: 1159519599715715394, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.01
+      value: 25.8
       objectReference: {fileID: 0}
     - target: {fileID: 2802405801401860514, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.4
+      value: -18.1
       objectReference: {fileID: 0}
     - target: {fileID: 2802405801401860514, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.01
+      value: 25.8
       objectReference: {fileID: 0}
     - target: {fileID: 3806759833970805438, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
       propertyPath: m_Name
@@ -1923,6 +1928,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 928369070}
+    - target: {fileID: 6183413148590321063, guid: 89e59450f7da35d42aa8dfb88e550415, type: 3}
+      propertyPath: mate
+      value: 
+      objectReference: {fileID: 70758061}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2271,7 +2280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1617288822432812558, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
       propertyPath: m_Radius
-      value: 3.4450939
+      value: 6.84
       objectReference: {fileID: 0}
     - target: {fileID: 1617288822432812558, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
       propertyPath: m_Offset.x
@@ -2285,6 +2294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mate
       objectReference: {fileID: 0}
+    - target: {fileID: 6950046884664181985, guid: 5c181efdfa65def46951ccd756d63ad6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 244332977}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5681,11 +5694,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 710968582844847210, guid: ae1c61aa6733df34f901d4da58c019c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.4
+      value: -18.1
       objectReference: {fileID: 0}
     - target: {fileID: 710968582844847210, guid: ae1c61aa6733df34f901d4da58c019c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 25.01
+      value: 25.8
       objectReference: {fileID: 0}
     - target: {fileID: 710968582844847210, guid: ae1c61aa6733df34f901d4da58c019c5, type: 3}
       propertyPath: m_LocalPosition.z
