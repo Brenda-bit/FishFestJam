@@ -10,6 +10,7 @@ public class DeathZone : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Debug.Log("Dead");
             FindObjectOfType<AudioManager>().Play("Death");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }

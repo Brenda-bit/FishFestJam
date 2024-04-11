@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyPatrol : MonoBehaviour
 {
@@ -26,6 +27,8 @@ public class EnemyPatrol : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Debug.Log("Yeeah Killed U!");
+            FindObjectOfType<AudioManager>().Play("Death");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (other.CompareTag("Coral"))
         {

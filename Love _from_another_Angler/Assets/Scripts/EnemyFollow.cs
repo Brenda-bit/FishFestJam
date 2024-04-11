@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyFollow : MonoBehaviour
 {
@@ -14,19 +15,14 @@ public class EnemyFollow : MonoBehaviour
     {
         if (other.CompareTag("Open"))
         {
-            if (closed.activeSelf)
-            {
-                Debug.Log("Yeeah Killed U!");
-            }
-            else if (closed.activeSelf == false)
-            {
-                Debug.Log("Are u crazy? Follow!");
-                startFollow = true;
-            }
+            Debug.Log("Are u crazy? Follow!");
+            startFollow = true;
         }
         if (other.CompareTag("Player"))
         {
             Debug.Log("Yeeah Killed U!");
+            FindObjectOfType<AudioManager>().Play("Death");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (other.CompareTag("Coral"))
         {
